@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Número arábigo → Número romano</h1>
+
+    <div class="inline">
+      <label>Número arábigo</label>
+      <br>
+      <input type="text" [(ngModel)]="numero.arabigo" class="roman-input" id="arabic" #arabic
+        />
+    </div>
+    <button class="btn" (click)="Transform()">Convertir</button>
+    <div class="inline">
+      <label>Número romano</label>
+      <br>
+      <input type="text" class="roman-input" id="roman" [(ngModel)]="numero.romano" />
+    </div>
+  </div>
+  

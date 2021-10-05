@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { RomanNumberComponent } from './roman-number/roman-number.component';
 
-const routes: Routes = [];
+
+
+const routes: Routes = [
+  { path: '', redirectTo: '/RomanNumber', pathMatch: 'full' },
+  {
+    path: 'RomanNumber',
+    component: RomanNumberComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
